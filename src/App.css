@@ -1,42 +1,108 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+:root {
+  background-color: rgb(240, 208, 208);
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.expense-container {
+  border: 2px solid rgb(8, 8, 8);
+  border-radius: 20px;
+  min-height: 600px;
+  width: 500px;
+  background-color: darkgray;
   text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.header {
+  background-color: darkgray;
+  padding: 10px;
+  border-radius: 20px 20px 0 0;
+  font-size: 20px;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.total-blac {
+  font-size: 30px;
+  color: green;
+  font-weight: bold;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.expense-store {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+  color: whitesmoke;
+  background-color: rgb(8, 8, 8, 0.7);
+  margin: 0;
+  padding: 0;
+  /* border: 1px solid orangered; */
+}
+.In {
+  width: 50%;
+  /* border-right: 1px solid orangered; */
+}
+.In span {
+  display: block;
+  color: green;
+}
+.Ex span {
+  display: block;
+  color: red;
+  /* border-left: 1px solid darkgray; */
+}
+.Ex {
+  width: 50%;
 }
 
-.card {
-  padding: 2em;
+.addremove {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+  background-color: gray;
+  border: 2px solid black;
 }
 
-.read-the-docs {
-  color: #888;
+form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: rgb(8, 8, 8, 0.7);
+}
+.select {
+  margin: 10px;
+  padding: 10px;
+  border-radius: 12px;
+  background-color: gray;
+  font-size: 20px;
+  color: white;
+}
+.input {
+  margin: 10px;
+  padding: 10px;
+  border-radius: 12px;
+  background-color: gray;
+  font-size: 22px;
+  color: black;
+}
+.btn {
+  margin: 10px;
+  padding: 10px;
+  border-radius: 12px;
+  background-color: orangered;
+  font-size: 20px;
+  text-transform: capitalize;
+  color: white;
+  cursor: pointer;
+}
+.btn:hover {
+  background-color: rgb(8, 8, 8);
+  color: orangered;
+  cursor: pointer;
 }
